@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mygrace photography website</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cssfile.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!--font-awesome-->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <!-- custom js file link  -->
+    <script src="js/script.js" defer></script>
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo">MyGrace Studio</a>
+
+    <nav class="navbar">
+        <a data-aos="zoom-in-left" data-aos-delay="300" href="#home">Home</a>
+        <a data-aos="zoom-in-left" data-aos-delay="450" href="#about">About</a>
+        <a data-aos="zoom-in-left" data-aos-delay="600" href="#services">Services</a>
+        <a data-aos="zoom-in-left" data-aos-delay="900" href="#gallery">Gallery</a>
+        <a data-aos="zoom-in-left" data-aos-delay="750" href="#Team">Team</a>
+        <a data-aos="zoom-in-left" data-aos-delay="1150" href="#contact">Contact</a>
+    </nav>
+   <button id="dark" onclick="myFunction()"><i class="fa fa-2x fa-adjust" aria-hidden="true"></i></button>
+   <a id="dark" href="tel: +211928901760" ><i class="fa fa-2x fa-phone" aria-hidden="true"></i> </a>
+   <a id="whatsapp" href="https://api.whatsapp.com/send?phone=256781977217" ><i class="fab fa-whatsapp" ></i></a>
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <span data-aos="fade-down" data-aos-delay="150">HELLO, WELCOME</span>
+        <h3 data-aos="fade-up" data-aos-delay="300">TO MYGRACE PHOTOGRAPHY</h3>
+        <p> <h4 data-aos="fade-down" data-aos-delay="450" class="contact" >"express and quality work is assured" </h4> </p>
+        <span data-aos="fade-left" data-aos-delay="150">BOOK PHOTOGRAPHER</span>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+
+<!-- booking form section starts  -->
+
+<section class="book-form" id="book-form">
+
+    <form autocomplete="off" method="post" action="mailto:awanmabur212@gmail.com" enctype="text/plain">
+        <div data-aos="zoom-in" data-aos-delay="150" class="inputBox">
+            <span>What is Your Name?</span>
+            <input required="true" type="text" name="Name" placeholder="place your name here" value="">
+        </div>
+        <div data-aos="zoom-in" data-aos-delay="300" class="inputBox">
+            <span>when are you coming?</span>
+            <input required="true" type="date" name="date" value="">
+        </div>
+        <div data-aos="zoom-in" data-aos-delay="450" class="inputBox">
+            <span>how many photos will you take?</span>
+            <input required="true" type="number" name="number" placeholder="number of Photos" value="">
+        </div>
+        <input data-aos="zoom-in" data-aos-delay="600" type="submit" value="Book now" class="btn">
+    </form>
+
+</section>
+
+<!-- booking form section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+  <div class="container">
+    <div class="contact" style="text-align:center">
+      <span>About Us</span>
+    </div>
+    <div class="row">
+      <div class="column" data-aos="fade-right" data-aos-delay="150">
+        <img id="text" src="images/2.jpg" alt="">
+      </div>
+      <div id="about1" class="column" data-aos="fade-left" data-aos-delay="150">
+
+        <p>Mygrace Photography was founded in 2019. It is regarded as one of the top
+          photo studio in Adjumani district, uganda due to their high-quality services and professional
+          photographers. It caters to a wide range of occasions, including graduations,
+           maternity, newborns, and even business celebrations.</p>
+
+        <p id="p1">Moreover, MyGrace is also well-known for its awards, both locally and globally. Since its inception, the studio has proved that it is unrivalled in terms of both quality and speed.
+             Their experience dates back to 2019 and they have already managed over 2000 projects. Because of their years of experience, you’ll be in good hands.</p>
+
+        <p id="p2">Mygrace Photography has also expanded into commercial photography,
+          shooting photographs for advertising and marketing firms. Its photographers
+           have extensive expertise in all types of studio photography, so you can be
+           certain that you’re in good hands. They are mostly popular for studio
+           pregnancy photoshoots and studio maternity photoshoots. </p>
+
+        <p id="p3">Mygrace photography has many branches in different number of places, Many customers can afford the prices, and the studio is open all the time. Parking for our clients is also available at no additional charge. MyGrace is well-known for a number of sources aside from its capacity to perform both photography and videography projects.</p>
+      </div>
+    </div>
+  </div>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"> <img src="images/arr.png" alt=""></button>
+
+</section>
+<!-- about section ends -->
+
+
+<!-- banner section starts  -->
+
+<div class="banner">
+
+    <div class="content" data-aos="zoom-in-up" data-aos-delay="300">
+        <span>Shoot with us</span>
+        <h3>Let's do this together</h3>
+        <p>First come First serve be the first to shoot, let's enjoy quality work together.</p>
+        <a href="tel: +211928901760" class="btn">book now</a>
+    </div>
+
+</div>
+
+<!-- banner section ends -->
+
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <div class="heading">
+      <span>our services</span>
+      <h1>countless expericences</h1>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box" data-aos="fade-up" data-aos-delay="150">
+            <div class="image">
+                <img src="images/des-1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Events Photos</h3>
+                <p>Events like wedding, birthday's parties, occassions and all kind of Events photo.</p>
+                <a href="tel: +211928901760">Get in touch with us <i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="300">
+            <div class="image">
+                <img src="images/6.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Indoor and outdoor photos</h3>
+                <p>We takes indoor photos in the studio and photoshoot outside.</p>
+                <a href="tel: +211928901760">Get in touch with us <i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="450">
+            <div class="image">
+                <img src="images/v.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Video Shoot</h3>
+                <p>we are also expericences in video caverage and video editting.</p>
+                <a href="tel: +211928901760">Get in touch with us <i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="600">
+            <div class="image">
+                <img src="images/p.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Passport size photos</h3>
+                <p>we takes all kind of Passport size photos according to thier dimension.</p>
+                <a href="tel: +211928901760">Get in touch with us <i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="750">
+            <div class="image">
+                <img src="images/4.png" alt="">
+            </div>
+            <div class="content">
+                <h3>All kind of designing</h3>
+                <p>In case you haven't seen your service mention above don't hesitate to call us.</p>
+                <a href="tel: +211928901760">Get in touch with us<i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="900">
+            <div class="image">
+                <img src="images/24.png" alt="">
+            </div>
+            <div class="content">
+                <h3>24/7 customer's support</h3>
+                <p>For all inquireis, booking or complaints don't think twice call us direct and get satify.</p>
+                <a href="tel: +211928901760">Get in touch with us <i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+
+<!-- starts slide show -->
+
+<div class="slider">
+		<!-- fade css -->
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>Augest</h1>
+				<p>This is the best photo of <br>Augest 2022</p>
+        <a   href="tel: +211928901760" class="btn btn-outline-info btn-blue btn-lg px-3 me-md-2"><i id="call-logo"class="fa fa-phone" aria-hidden="true"></i> </a>
+        <a   href="https://api.whatsapp.com/send?phone=256781977217" style="margin-left: 10px; "class="btn btn-outline-info btn-blue btn-lg px-3 me-md-2"><i class="fab fa-2x fa-whatsapp" ></i> </a>
+			</div>
+			<img id="slide" src="images/s2.jpg" style="width: 100%; height: auto;">
+		</div>
+
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>July</h1>
+				<p>This is the best photo of<br> July 2022</p>
+        <a   href="tel: +211928901760" class="btn btn-outline-info btn-blue btn-lg px-3 me-md-2"><i id="call-logo"class="fa fa-phone" aria-hidden="true"></i> </a>
+        <a   href="https://api.whatsapp.com/send?phone=256781977217" style="margin-left: 10px; "class="btn btn-outline-info btn-blue btn-lg px-3 me-md-2"><i class="fab fa-2x fa-whatsapp" ></i> </a>
+			</div>
+			<img id="slide" src="images/s1.jpg" style="width: 100%; height: auto;">
+		</div>
+
+		<div class="myslide fade">
+			<div class="txt">
+        <h1>April</h1>
+				<p>This is the best photo of<br> April 2022</p>
+        <a   href="tel: +211928901760" class="btn btn-outline-info btn-blue btn-lg px-3 me-md-2"><i id="call-logo"class="fa fa-phone" aria-hidden="true"></i> </a>
+        <a   href="https://api.whatsapp.com/send?phone=256781977217" style="margin-left: 10px; "class="btn btn-outline-info btn-blue btn-lg px-3 me-md-2"><i class="fab fa-2x fa-whatsapp" ></i> </a>
+			</div>
+			<img id="slide" src="images/s3.jpg" style="width: 100%; height: auto;">
+		</div>
+
+		<div class="myslide fade">
+			<div class="txt">
+        <h1>June</h1>
+				<p>This is the best photo of<br> June 2022</p>
+        <a   href="tel: +211928901760" class="btn btn-outline-info btn-blue btn-lg px-3 me-md-2"><i id="call-logo"class="fa fa-phone" aria-hidden="true"></i> </a>
+        <a   href="https://api.whatsapp.com/send?phone=256781977217" style="margin-left: 10px; "class="btn btn-outline-info btn-blue btn-lg px-3 me-md-2"><i class="fab fa-2x fa-whatsapp" ></i> </a>
+			</div>
+			<img id="slide" src="images/s4.jpg" style="width: 100%; height: auto;">
+		</div>
+
+		<div class="myslide fade">
+			<div class="txt">
+        <h1>March</h1>
+				<p>This is the best photo of<br> March 2022</p>
+        <a   href="tel: +211928901760" class="btn btn-outline-info btn-blue btn-lg px-3 me-md-2"><i id="call-logo"class="fa fa-phone" aria-hidden="true"></i> </a>
+        <a   href="https://api.whatsapp.com/send?phone=256781977217" style="margin-left: 10px; "class="btn btn-outline-info btn-blue btn-lg px-3 me-md-2"><i class="fab fa-2x fa-whatsapp" ></i> </a>
+			</div>
+			<img id="slide" src="images/s5.jpg" style="width: 100%; height: auto;">
+		</div>
+		<!-- /fade css -->
+
+		<!-- onclick js -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		<div class="dotsbox" style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+			<span class="dot" onclick="currentSlide(5)"></span>
+		</div>
+		<!-- /onclick js -->
+	</div>
+<!-- ends slide show -->
+
+
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+    <div class="heading">
+        <span>our gallery</span>
+        <h1>we record memories</h1>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
+            <img src="images/g1.jpg" alt="">
+
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
+            <img src="images/g2.jpg" alt="">
+
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
+            <img src="images/g3.jpg" alt="">
+
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
+            <img src="images/g4.jpg" alt="">
+
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
+            <img src="images/g5.jpg" alt="">
+
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
+            <img src="images/g6.jpg" alt="">
+
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
+            <img src="images/g7.jpg" alt="">
+
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
+            <img src="images/g8.png" alt="">
+
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
+            <img src="images/g9.jpg" alt="">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- gallery section ends -->
+
+
+<!-- team section starts  -->
+
+<section  id="Team">
+
+    <div class="heading" data-aos="fade-right" data-aos-delay="150">
+        <span>Team behind quality work</span>
+        <h1>countless expericences team</h1>
+    </div>
+
+    <div class="row1">
+      <div class="our-team" data-aos="zoom-in-right" data-aos-delay="280">
+        <div class="container1">
+      <img src="images/d.png" alt="Avatar" class="image">
+      <div class="overlay">
+        <a href="#" class="icon" title="User Profile">
+          <i class="fab   fa-twitter" aria-hidden="false"></i>
+          <i class="fab   fa-linkedin" aria-hidden="false"></i>
+          <i class="fab fa-facebook"></i>
+        </a>
+        <div class="team">
+          <h3>Aleer Alier Chan</h3>
+          <h5>Manager</h5>
+        </div>
+      </div>
+
+    </div>
+      </div>
+
+
+      <div class="our-team" data-aos="zoom-in-left" data-aos-delay="250">
+        <div class="container1">
+      <img src="images/a.png" alt="Avatar" class="image">
+      <div class="overlay">
+        <a href="#" class="icon" title="User Profile">
+          <i class="fab   fa-twitter" aria-hidden="false"></i>
+          <i class="fab   fa-linkedin" aria-hidden="false"></i>
+          <i class="fab fa-facebook"></i>
+        </a>
+        <div class="team">
+          <h3>Tonimix Monychol</h3>
+          <h5>Assistance</h5>
+        </div>
+      </div>
+
+    </div>
+      </div>
+
+
+      <div class="our-team" data-aos="fade-left" data-aos-delay="150">
+        <div class="container1">
+      <img src="images/c.png" alt="Avatar" class="image">
+      <div class="overlay">
+        <a href="#" class="icon" title="User Profile">
+          <i class="fab   fa-twitter" aria-hidden="false"></i>
+          <i class="fab   fa-linkedin" aria-hidden="false"></i>
+          <i class="fab fa-facebook"></i>
+        </a>
+        <div class="team">
+          <h3>Dau Classic</h3>
+          <h5>Photographer</h5>
+        </div>
+      </div>
+
+    </div>
+      </div>
+
+
+      <div class="our-team" data-aos="fade-right" data-aos-delay="150">
+        <div class="container1">
+      <img src="images/b.png" alt="Avatar" class="image">
+      <div class="overlay">
+        <a href="#" class="icon" title="User Profile">
+          <i class="fab   fa-twitter" aria-hidden="false"></i>
+          <i class="fab   fa-linkedin" aria-hidden="false"></i>
+          <i class="fab fa-facebook"></i>
+        </a>
+        <div class="team">
+          <h3>Bol Winner </h3>
+          <h5>Photographer</h5>
+        </div>
+      </div>
+
+    </div>
+      </div>
+    </div>
+
+
+</section>
+
+<!-- team section ends -->
+
+
+<!-- review section starts  -->
+
+<section class="review">
+
+    <div class="content" data-aos="fade-right" data-aos-delay="300">
+        <span>testimonials</span>
+        <h3>good news from our clients</h3>
+        <p>This was my first experience of working in a professional photo studio.
+          To tell you the truth, I didn’t quite know how to set the lights and work
+           with this professional equipment. The MyGrace photo studio staff helped me a lot
+           through all the process of shooting. Both, the model and I were very happy
+           with the result. </p>
+
+        <p>Our first experience with MyGrace Studio was pretty amazing. From the helpful,
+           really nice staff to the space itself, for the price is the one of the best
+            studio in south sudan. We will definitely be shooting here again.</p>
+
+        <p>I've used MyGrace Studio Several times & every time I go, I'm always leaving satisfied.
+           Keep up with the amazing stages! I hear you may want to expand in other cities!
+            If you create one in Juba. I will be the first to shoot!
+            Thank you guys for giving out this amazing experience!</p>
+    </div>
+
+    <div class="box-container" data-aos="fade-left" data-aos-delay="600">
+
+        <div class="box">
+            <p>Really enjoy using the new studios. Great natural light and the studio
+              is well equipped with everything I would need to shoot fashion and portraits.
+               </p>
+            <div class="user">
+                <img src="images/r2.jpg" alt="">
+                <div class="info">
+                    <h3>pantheer</h3>
+                    <span>customer</span>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <p>Used Mygrace multiple times for photo shoots and results are amazing!
+              Great rates, convenient location and high professionalism. Will use again.
+            </p>
+            <div class="user">
+                <img src="images/r3.jpg" alt="">
+                <div class="info">
+                    <h3>nun lueth</h3>
+                    <span>cameraman</span>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <p>Thanks for a great video shoot. The staff were always there and very
+              helpful. We will be booking MyGrace Studios again soon, THANKS!!</p>
+            <div class="user">
+                <img src="images/r1.jpg" alt="">
+                <div class="info">
+                    <h3>Mario paul</h3>
+                    <span>customer</span>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <p>It's BEST place to implement any ideas for photo and video shooting.
+              The location inspires to create unique work. Thank you guys for making this studio.</p>
+            <div class="user">
+                <img src="images/r4.jpg" alt="">
+                <div class="info">
+                    <h3>john Ajingo</h3>
+                    <span>designer</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- faq section starts  -->
+
+<section  id="faq">
+
+  <h1>Frequently Asked Questions</h1>
+    <div class="faq-container">
+
+      <div class="faq active" data-aos="fade-down" data-aos-delay="150">
+        <h3 class="faq-title">
+          how long should i wait to received my photos?
+        </h3>
+        <p class="faq-text">
+          Ans. all our works are express, you take photo, we work on it and you go with yours, unless they are many photos from 11 and above or at busy hours like X-mas time, occasions and new year photos for those, we can schedule with customers.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq data-aos="fade-up" data-aos-delay="150"">
+        <h3 class="faq-title">
+          Do I need to make an appointment?
+        </h3>
+
+        <p class="faq-text">
+          Ans. Yes, it's advisable to make an appointment, for a studio to in thier scheduled prior to convenient times and dates.
+        </p>
+
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq" data-aos="fade-down" data-aos-delay="230">
+        <h3 class="faq-title">
+          Do you alter pictures?
+        </h3>
+        <p class="faq-text">
+          Ans. Yes, all the reputed studios provide their customers with photo retouching and photo editing services. And, we use the software named adobe photoshop and use different methods like shadow creation, image masking, etc to fix your photo according to what suit you.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq" data-aos="fade-right" data-aos-delay="180">
+        <h3 class="faq-title">
+          How long does a studio or location shoot take?
+        </h3>
+        <p class="faq-text">
+          Ans. A studio session might take anything from 60 minutes to an hour. it also Depends with nature of photos or video you are shooting.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq" data-aos="fade-left" data-aos-delay="100">
+        <h3 class="faq-title">
+          How much should i take a picture?
+        </h3>
+        <p class="faq-text">
+          Ans. our prices are always flexible Depending with time and we consider customers situation all our prices are afordable and convenient.
+        </p>
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq" data-aos="fade-down" data-aos-delay="250">
+        <h3 class="faq-title">
+          Conclusion?
+        </h3>
+        <p class="faq-text">
+          Photography is all about creativity and an eye for detail. But, a well-equipped photography studio can make the work easy and get the best outputs. While considering a professional photography studio one should always keep in mind that it is important to be sure about your photography niche. So, when you are sure about the niche then compare the ideas with different studios and see their features select in which studio you will get the well-deserved output for your photography.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
+
+</section>
+
+<!-- faq section ends -->
+
+<!-- app section starts  -->
+
+<div class="app">
+
+    <div class="content" data-aos="zoom-in-up" data-aos-delay="300">
+        <span>Download our app</span>
+        <h3>own our app in your phone</h3>
+        <p>Download our app in playstore and starts using it for better experience.</p>
+        <a href="#book-form"  ><img src="images/p41.png" width="100" height="80" alt="..."></a>
+    </div>
+
+</div>
+
+<!-- app section ends -->
+
+<!-- contact -->
+
+<div id="contact" class="container">
+  <div class="contact" style="text-align:center">
+    <span>Contact Us</span>
+  </div>
+  <div class="row">
+    <div class="column" data-aos="zoom-in-left" data-aos-delay="180">
+     <div><iframe width="626" height="500" id="text" src="https://maps.google.com/maps?q=bortown%20south%20sudan%20marol%20market&t=k&z=15&ie=UTF8&iwloc=&output=embed"  ></iframe> </div>
+    </div>
+    <div class="column" data-aos="zoom-in-right" data-aos-delay="250">
+      <form autocomplete="off" method="post" action="mailto:awanmabur212@gmail.com" enctype="text/plain">
+        <label class="contact1" for="name">Full Name</label>
+        <input required="true" autocomplete="false" class="contact2" type="text" id="name" name="name" placeholder="Your full name..">
+        <label class="contact1" for="email">Email</label>
+        <input required="true" autocomplete="false" class="contact2" type="email" id="email" name="email" placeholder="Your email..">
+        <label class="contact1" for="Telephone">Phone</label>
+        <input required="true" autocomplete="false" class="contact2" type="number" id="Tel" name="Tel" placeholder="Your phone..">
+        <label class="contact1" for="subject">Subject</label>
+        <textarea required="true" autocomplete="false" id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+<!-- contact -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box" data-aos="fade-up" data-aos-delay="150">
+            <a href="#" class="logo"> MyGrace </a>
+            <p>Mygrace Photography Was Founded In 2019.
+               It Is Regarded As One Of The Top Photo
+               Studio In Adjumani District, Uganda Due
+                To Their High-Quality Services And
+                Professional Photographers.</p>
+            <div class="share">
+                <a href="https://ne-np.facebook.com/awan.mabur/" class="fab fa-facebook-f"></a>
+                <a href="https://twitter.com/AwanMabur/status/" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/awanmabur/" class="fab fa-instagram"></a>
+                <a href="https://www.google.com/url?sa=t&source=web&rct=j&url=https://ug.linkedin.com/in/simon-awan-mabur-a22119202&ved=2ahUKEwjJ4NXE2vjvAhUEgP0HHSAtDQ8Qjjh6BAgDEAE&usg=AOvVaw0Mu3xYVeGjnyild5BBvDSY" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="300">
+            <h3>quick links</h3>
+            <a href="#home" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#about" class="links"> <i class="fas fa-arrow-right"></i> about </a>
+            <a href="#services" class="links"> <i class="fas fa-arrow-right"></i> Services </a>
+            <a href="#gallery" class="links"> <i class="fas fa-arrow-right"></i> gallery </a>
+            <a href="#Team" class="links"> <i class="fas fa-arrow-right"></i> Team </a>
+            <a href="#contact" class="links"> <i class="fas fa-arrow-right"></i> Contact </a>
+        </div>
+
+
+        <div class="box" data-aos="fade-up" data-aos-delay="450">
+            <h3>contact info</h3>
+            <p> <i class="fas fa-map"></i> Bortown, south sudan </p>
+            <p> <i class="fas fa-phone"></i> +211-92890-1760 </p>
+            <p> <i class="fas fa-envelope"></i> Mygrace212@gmail.com </p>
+            <p> <i class="fas fa-clock"></i> 7:00am - 10:00pm </p>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="600">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <form action="">
+                <input type="email" name="" placeholder="enter your email" class="email" id="">
+                <input type="submit" value="subscribe" class="btn">
+            </form>
+        </div>
+
+    </div>
+
+</section>
+
+<div class="credit"> Copyright &copy; 2019  <span>MyGrace </span>Photography</div>
+
+
+<!-- footer section ends -->
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script src="js/jsfile.js" charset="utf-8"></script>
+
+<script>
+
+    AOS.init({
+        duration: 800,
+        offset:150,
+    });
+
+</script>
+
+</body>
+</html>

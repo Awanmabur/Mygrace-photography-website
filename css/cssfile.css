@@ -1,0 +1,424 @@
+/* slide show start */
+
+.slider{
+	position: relative;
+	width: 100%;
+	background: #2c3e50; /* darckblue */
+}
+.myslide{
+	height: 655px;
+	display: none;
+	overflow: hidden;
+}
+
+.prev, .next{
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 50px;
+	padding: 15px;
+	cursor: pointer;
+	color: #fff;
+	transition: 0.1s;
+	user-select: none;
+}
+.prev:hover, .next:hover{
+	color: #00a7ff; /* blue */
+}
+.next{
+	right: 0;
+}
+.dotsbox{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	bottom: 20px;
+	cursor: pointer;
+}
+.dot{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	margin: 0 10px;
+	cursor: pointer;
+}
+/* /2 */
+
+/* javascript */
+.active, .dot:hover{
+	border-color: #00a7ff; /* blue */
+}
+/* /javascript */
+
+/* muslide add fade */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0.8}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.8}
+  to {opacity: 1}
+}
+/* /muslide add fade */
+
+/* 3 */
+.txt{
+	position: absolute;
+	color: #fff;
+	letter-spacing: 2px;
+	line-height: 35px;
+	top: 40%;
+	left: 15%;
+	-webkit-animation-name: posi;
+  	-webkit-animation-duration: 2s;
+  	animation-name: posi;
+  	animation-duration: 2s;
+	z-index: 1;
+}
+
+@-webkit-keyframes posi {
+  from {left: 25%;}
+  to {left: 15%;}
+}
+
+
+@keyframes posi {
+  from {left: 25%;}
+  to {left: 15%;}
+}
+
+.txt h1{
+	color: #FF69B4; /* blue */
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+.txt p{
+	font-weight: bold;
+	font-size: 20px;
+}
+/* /3 */
+
+/* 4 */
+#slide{
+	transform: scale(1.5, 1.5);
+	-webkit-animation-name: zoomin;
+  	-webkit-animation-duration: 40s;
+  	animation-name: zoomin;
+  	animation-duration: 40s;
+}
+@-webkit-keyframes zoomin {
+  from {transform: scale(1, 1);}
+  to {transform: scale(1.5, 1.5);}
+}
+
+
+@keyframes zoomin {
+  from {transform: scale(1, 1);}
+  to {transform: scale(1.5, 1.5);}
+}
+/* /4 */
+
+
+
+/* 5 */
+@media screen and (max-width: 800px){
+	.myslide{
+		height: 500px;
+	}
+	.txt{
+		letter-spacing: 2px;
+		line-height: 25px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-animation-name: posi2;
+		-webkit-animation-duration: 2s;
+		animation-name: posi2;
+		animation-duration: 2s;
+	}
+
+	@-webkit-keyframes posi2 {
+	  from {top: 35%;}
+	  to {top: 50%;}
+	}
+
+
+	@keyframes posi2 {
+	  from {top: 35%;}
+	  to {top: 50%;}
+	}
+
+	.txt h1{
+		font-size: 40px;
+	}
+	.txt p{
+		font-size: 13px;
+	}
+
+}
+/* /5 */
+
+/* 6 */
+@media screen and (max-width: 520px){
+	.txt h1{
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+	.sign{
+		margin-right: 20px;
+	}
+	.sign a{
+		font-size: 12px;
+	}
+}
+/* /6 */
+
+/* slide show ends */
+
+
+ /* team start */
+
+/* Float four columns side by side */
+.our-team {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row1 {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .our-team {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container1 {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Make the image to responsive */
+.image {
+  width: 100%;
+  height: auto;
+	border-radius: 5%
+}
+
+.container1:hover .image{
+	border-radius: 50%
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+	background: transparent;
+  color: #f1f1f1;
+}
+
+/* When you mouse over the container, fade in the overlay icon*/
+.container1:hover .overlay {
+  opacity: 1;
+}
+
+/* The icon inside the overlay is positioned in the middle vertically and horizontally */
+.icon {
+  color: #FF69B4;
+  font-size: 25px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* When you move the mouse over the icon, change color */
+.icon:hover {
+  color: #DC143C;
+}
+
+.team{
+	text-align: center;
+	font-size: 20px;
+	color: #000000;
+	margin-top: 80%;
+}
+
+@media screen and (max-width: 600px) {
+ .team{
+   width: 100%;
+   margin-top: 0;
+	 font-size: 20px;
+ 	 color: #000000;
+ 	margin-top: 80%;
+ }
+}
+
+/* team end */
+
+/* faq start */
+
+h1 {
+ margin: 50px 0 30px;
+ text-align: center;
+ color: #FF69B4;
+}
+
+.faq-container {
+ max-width: 100;
+ margin: 0 auto;
+}
+
+.faq {
+ color: white;
+ background-color: transparent;
+ border: 2px solid #FF69B4;
+ border-radius: 10px;
+ margin: 20px 0;
+ padding: 30px;
+ position: relative;
+ overflow: hidden;
+ transition: 0.3s ease;
+}
+
+.faq.active {
+ color: white;
+ background-color: transparent;
+ box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq.active::before,
+.faq.active::after {
+ content: '\f075';
+ font-family: 'Font Awesome 5 Free';
+ color: #2ecc71;
+ font-size: 7rem;
+ position: absolute;
+ opacity: 0.2;
+ top: 20px;
+ left: 20px;
+ z-index: 0;
+}
+
+.faq.active::before {
+ color: #3498db;
+ top: -10px;
+ left: -30px;
+ transform: rotateY(180deg);
+}
+
+.faq-title {
+ margin: 0 35px 0 0;
+}
+
+.faq-text {
+ display: none;
+ margin: 30px 0 0;
+ color: #FF69B4;
+}
+
+.faq.active .faq-text {
+ display: block;
+}
+
+.faq-toggle {
+ background-color: transparent;
+ color: white;
+ border: 0;
+ border-radius: 50%;
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 16px;
+ padding: 0;
+ position: absolute;
+ top: 30px;
+ right: 30px;
+ height: 30px;
+ width: 30px;
+}
+
+.faq-toggle:focus {
+ outline: 0;
+}
+
+.faq-toggle .fa-times {
+ display: none;
+}
+
+.faq.active .faq-toggle .fa-times {
+ color: #fff;
+ display: block;
+}
+
+.faq.active .faq-toggle .fa-chevron-down {
+ display: none;
+}
+
+.faq.active .faq-toggle {
+ background-color: #9fa4a8;
+}
+
+#about1{
+	text-align: justify;
+	margin-top: 30px;
+	color: white;
+}
+
+
+#p1{
+	margin-top: 10px;
+}
+
+#p2{
+	margin-top: 10px;
+}
+
+#p3{
+	margin-top: 10px;
+}
+
+/* faq ends */
